@@ -4,8 +4,10 @@
     'appControllers'
   ]);
 
-  app.config(['$routeProvider',
-    function($routeProvider) {
+  app.config(['$routeProvider', '$locationProvider',
+    function($routeProvider, $locationProvider) {
+      // history states!
+      $locationProvider.html5Mode(true);
       $routeProvider.
         when('/', {
           templateUrl : 'partials/home.html',
