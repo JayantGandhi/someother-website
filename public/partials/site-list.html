@@ -1,0 +1,14 @@
+        Search: <input ng-model="query">
+        Sort by:
+        <select ng-model="orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="dateCreated">Newest</option>
+        </select>
+
+        <div ng-controller="SiteListController as siteList">
+          <ul>
+            <li ng-repeat="site in sites | filter:query | orderBy:orderProp">
+              <a href="{{site.url}}" target="_blank">{{site.name}}</a><span> - {{site.dateCreated.getFullYear()}}</span>
+            </li>
+          </ul>
+        </div>
