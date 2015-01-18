@@ -1,5 +1,9 @@
 nav {
   background-color: #2D2D2D !important;
+
+  .navbar-brand img {
+    margin-top: -5px;
+  }
 }
 
 .navbar-default .navbar-nav>li>a.nav-link {
