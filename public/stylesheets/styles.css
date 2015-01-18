@@ -8,7 +8,7 @@ nav {
 
 .navbar-default .navbar-nav > li > a.nav-link {
   color: #D8D8D8; }
-  .navbar-default .navbar-nav > li > a.nav-link:hover {
+  .navbar-default .navbar-nav > li > a.nav-link:hover, .navbar-default .navbar-nav > li > a.nav-link:focus, .navbar-default .navbar-nav > li > a.nav-link:active {
     color: white; }
 
 .navbar-nav.right {

@@ -9,7 +9,9 @@ nav {
 .navbar-default .navbar-nav>li>a.nav-link {
   color: #D8D8D8;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     color: lighten(#D8D8D8, 20%);
   }
 }
