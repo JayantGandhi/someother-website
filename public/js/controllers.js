@@ -14,9 +14,9 @@ appControllers.controller('HomeController', ['$scope',
   }
 ]);
 
-// appControllers.controller('SiteDetailsController', function($scope) {
-
-// });
+appControllers.controller('CollapseController', function ($scope) {
+  $scope.isCollapsed = true;
+});
 
 var sites = [
   {
