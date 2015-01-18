@@ -8,6 +8,9 @@
     var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
     var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 
+    // port var for heroku
+    var port = process.env.PORT || 8080;
+
     // configuration =================
 
     // mongoose.connect('mongodb://node:node@mongo.onmodulus.net:27017/uwO3mypu');     // connect to mongoDB database on modulus.io
@@ -23,5 +26,6 @@
         res.sendfile('./public/index.html');
 
     // listen (start app with node server.js) ======================================
-    app.listen(8080);
-    console.log("App listening on port 8080");
+    app.listen(port, function() {
+        console.log('Our app is running on http://localhost:' + port);
+    });
