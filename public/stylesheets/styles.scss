@@ -9,3 +9,12 @@ nav {
     color: lighten(#D8D8D8, 20%);
   }
 }
+
+.navbar-nav.right {
+  float: right;
+}
+
+@import 'fontello.css';
+@import 'fontello-codes.css';
+@import 'fontello-embedded.css';
+// @import 'animation.css';

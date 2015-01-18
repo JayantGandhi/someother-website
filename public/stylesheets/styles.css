@@ -1,3 +1,6 @@
+@import url(fontello.css);
+@import url(fontello-codes.css);
+@import url(fontello-embedded.css);
 nav {
   background-color: #2D2D2D !important; }
 
@@ -5,5 +8,8 @@ nav {
   color: #D8D8D8; }
   .navbar-default .navbar-nav > li > a.nav-link:hover {
     color: white; }
+
+.navbar-nav.right {
+  float: right; }
 
 /*# sourceMappingURL=styles.css.map */
