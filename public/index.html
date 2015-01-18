@@ -25,7 +25,11 @@
 
     <!-- boostrap.js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script type="boostrap-ui.min.js"></script>
+
+    <!-- Angular.js -->
+    <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-ui.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -35,7 +39,7 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience. Seriously.</p>
     <![endif]-->
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -51,8 +55,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="/sites">My Sites</a></li>
-            <li><a href="#">Link</a></li>
+            <li><a href="/sites" class="nav-link">My Sites</a></li>
+            <li><a href="#" class="nav-link">Link</a></li>
           </ul>
 
 
@@ -69,9 +73,7 @@
       <p>I know it's a pain, but something something dynamic content something something <em>cutting edge</em>. You know how it is. Anyways I promise it's worth it. Cross my heart and hope to die.</p>
     </noscript>
 
-    <!-- Angular.js -->
-    <script type="text/javascript" src="lib/angular/angular.min.js"></script>
-    <script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+    <!-- my angular scripts -->
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/controllers.js"></script>
 

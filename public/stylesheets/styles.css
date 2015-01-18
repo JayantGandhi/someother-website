@@ -1,4 +1,9 @@
-body {
-  padding-top: 70px; }
+nav {
+  background-color: #2D2D2D !important; }
+
+.navbar-default .navbar-nav > li > a.nav-link {
+  color: #D8D8D8; }
+  .navbar-default .navbar-nav > li > a.nav-link:hover {
+    color: white; }
 
 /*# sourceMappingURL=styles.css.map */

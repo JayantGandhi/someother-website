@@ -1,6 +1,7 @@
 (function(){
   var app = angular.module('someOtherApp', [
     'ngRoute',
+    'ui.bootstrap',
     'appControllers'
   ]);
 

@@ -1,5 +1,11 @@
-body {
-  padding-top: 70px;
+nav {
+  background-color: #2D2D2D !important;
 }
 
-@import 'nav';
+.navbar-default .navbar-nav>li>a.nav-link {
+  color: #D8D8D8;
+
+  &:hover {
+    color: lighten(#D8D8D8, 20%);
+  }
+}
