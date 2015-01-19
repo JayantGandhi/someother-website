@@ -21,6 +21,10 @@ appControllers.controller('CollapseController', function ($scope) {
   $scope.isCollapsed = true;
 });
 
+appControllers.controller('CvController', function($scope){
+  //stuff
+});
+
 var sites = [
   {
     'name' : 'Blue Haven Capital',
