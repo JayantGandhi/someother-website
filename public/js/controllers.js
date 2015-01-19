@@ -1,16 +1,17 @@
 // Controllers for the shiz
 var appControllers = angular.module('appControllers', []);
 
-appControllers.controller('SiteListController', ['$scope', '$http',
-  function($scope, $http){
+appControllers.controller('SiteListController', ['$scope', '$http', 'Site',
+  function($scope, $http, Site){
     // $scope.sites = sites;
-    $http.get('/api/sites').
-      success(function(data, status, headers, config) {
-        $scope.sites = data.sites;
-    }).
-      error(function(data, status, headers, config) {
-
-    });
+    $scope.sites = Site.query();
+    console.log($scope.sites);
+    // $http.get('/api/sites').
+    //   success(function(data, status, headers, config) {
+    //     $scope.sites = data.sites;
+    // }).
+    //   error(function(data, status, headers, config) {
+    // });
     $scope.orderProp = 'dateCreated';
   }
 ]);

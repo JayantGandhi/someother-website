@@ -3,7 +3,8 @@
     'ngRoute',
     'ngAnimate',
     'ui.bootstrap',
-    'appControllers'
+    'appControllers',
+    'appServices'
   ]);
 
   app.config(['$routeProvider', '$locationProvider',
