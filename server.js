@@ -22,7 +22,20 @@
     app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
     app.use(methodOverride());
 
-    app.get('*', function(req, res) {
+    // backend routes
+    app.get('/api/sites', function(req, res) {
+        res.sendfile('./data/sites.json');
+    });
+
+    app.get('/api/education', function(req, res) {
+        res.sendfile('./data/education.json');
+    });
+
+    app.get('/api/experience', function(req, res) {
+        res.sendfile('./data/experience.json');
+    });
+
+    app.get('/*', function(req, res) {
         res.sendfile('./public/index.html');
     });
 

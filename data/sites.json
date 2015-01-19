@@ -1,0 +1,17 @@
+{
+  "sites" :[
+    {
+      "name" : "Blue Haven Capital",
+      "url"  : "http://www.bluehavencapital.com",
+      "year" : "2014",
+      "month": "8"
+    },
+    {
+      "name" : "The SAIS Europe Journal of Global Affairs",
+      "url"  : "http://www.saisjournal.org",
+      "year" : "2015",
+      "month": "01"
+    }
+
+  ]
+}

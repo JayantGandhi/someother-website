@@ -5,7 +5,7 @@
           <option value="dateCreated">Newest</option>
         </select>
 
-        <div ng-controller="SiteListController as siteList">
+        <div>
           <ul>
             <li ng-repeat="site in sites | filter:query | orderBy:orderProp">
               <a href="{{site.url}}" target="_blank">{{site.name}}</a><span> - {{site.dateCreated.getFullYear()}}</span>

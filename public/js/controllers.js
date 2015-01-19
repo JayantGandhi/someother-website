@@ -1,15 +1,22 @@
 // Controllers for the shiz
 var appControllers = angular.module('appControllers', []);
 
-appControllers.controller('SiteListController', ['$scope',
-  function($scope){
-    $scope.sites = sites;
+appControllers.controller('SiteListController', ['$scope', '$http',
+  function($scope, $http){
+    // $scope.sites = sites;
+    $http.get('/api/sites').
+      success(function(data, status, headers, config) {
+        console.log(data);
+    }).
+      error(function(data, status, headers, config) {
+
+    });
     $scope.orderProp = 'dateCreated';
   }
 ]);
 
-appControllers.controller('HomeController', ['$scope',
-  function($scope){
+appControllers.controller('HomeController', ['$scope', '$http',
+  function($scope, $http){
     $scope.section = '';
     $scope.setSection = function(section) {
       $scope.section = section;
@@ -17,13 +24,13 @@ appControllers.controller('HomeController', ['$scope',
   }
 ]);
 
-appControllers.controller('CollapseController', function ($scope) {
-  $scope.isCollapsed = true;
-});
-
-appControllers.controller('CvController', function($scope){
+appControllers.controller('CvController', ['$scope', '$http', function($scope, $http){
   //stuff
-});
+}]);
+
+// appControllers.controller('CollapseController', function ($scope) {
+//   $scope.isCollapsed = true;
+// });
 
 var sites = [
   {
