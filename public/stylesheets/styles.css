@@ -15,4 +15,7 @@ nav {
 .navbar-nav.right {
   float: right; }
 
+.view-container {
+  position: relative; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -20,6 +20,14 @@ nav {
   float: right;
 }
 
+.view-container {
+  position: relative;
+
+  .view-frame {
+
+  }
+}
+
 @import 'fontello.css';
 @import 'fontello-codes.css';
 @import 'fontello-embedded.css';
