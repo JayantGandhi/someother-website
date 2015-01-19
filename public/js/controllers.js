@@ -6,7 +6,7 @@ appControllers.controller('SiteListController', ['$scope', '$http',
     // $scope.sites = sites;
     $http.get('/api/sites').
       success(function(data, status, headers, config) {
-        console.log(data);
+        $scope.sites = data.sites;
     }).
       error(function(data, status, headers, config) {
 
