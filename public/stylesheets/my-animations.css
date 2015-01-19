@@ -3,180 +3,168 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-}
+  right: 0; }
 
 .view-frame.ng-enter {
-  -webkit-animation: 0.5s fade-in;
-  -moz-animation: 0.5s fade-in;
-  -o-animation: 0.5s fade-in;
-  animation: 0.5s fade-in;
-  z-index: 100;
-}
+  -webkit-animation: 1s fade-in;
+  -moz-animation: 1s fade-in;
+  -o-animation: 1s fade-in;
+  animation: 1s fade-in;
+  z-index: 100; }
 
 .view-frame.ng-leave {
-  -webkit-animation: 0.5s fade-out;
-  -moz-animation: 0.5s fade-out;
-  -o-animation: 0.5s fade-out;
-  animation: 0.5s fade-out;
-  z-index:99;
-}
+  -webkit-animation: 1s fade-in;
+  -moz-animation: 1s fade-in;
+  -o-animation: 1s fade-in;
+  animation: 1s fade-in;
+  z-index: 99; }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 @-moz-keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 @-webkit-keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 @keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 @-moz-keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 @-webkit-keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 /*light speed animations*/
 @-webkit-keyframes lightSpeedIn {
   0% {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-            transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
   60% {
     -webkit-transform: skewX(20deg);
-            transform: skewX(20deg);
-    opacity: 1;
-  }
-
+    transform: skewX(20deg);
+    opacity: 1; }
   80% {
     -webkit-transform: skewX(-5deg);
-            transform: skewX(-5deg);
-    opacity: 1;
-  }
-
+    transform: skewX(-5deg);
+    opacity: 1; }
   100% {
     -webkit-transform: none;
-            transform: none;
-    opacity: 1;
-  }
-}
-
+    transform: none;
+    opacity: 1; } }
 @keyframes lightSpeedIn {
   0% {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-            transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
   60% {
     -webkit-transform: skewX(20deg);
-            transform: skewX(20deg);
-    opacity: 1;
-  }
-
+    transform: skewX(20deg);
+    opacity: 1; }
   80% {
     -webkit-transform: skewX(-5deg);
-            transform: skewX(-5deg);
-    opacity: 1;
-  }
-
+    transform: skewX(-5deg);
+    opacity: 1; }
   100% {
     -webkit-transform: none;
-            transform: none;
-    opacity: 1;
-  }
-}
-
+    transform: none;
+    opacity: 1; } }
 .light-speed.ng-enter {
   -webkit-animation-name: lightSpeedIn;
-          animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-}
+  animation-timing-function: ease-out; }
 
 @-webkit-keyframes lightSpeedOut {
   0% {
-    opacity: 1;
-  }
-
+    opacity: 1; }
   100% {
     -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
-            transform: translate3d(100%, 0, 0) skewX(30deg);
-    opacity: 0;
-  }
-}
-
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
 @keyframes lightSpeedOut {
   0% {
-    opacity: 1;
-  }
-
+    opacity: 1; }
   100% {
     -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
-            transform: translate3d(100%, 0, 0) skewX(30deg);
-    opacity: 0;
-  }
-}
-
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
 .light-speed.ng-leave {
   -webkit-animation-name: lightSpeedOut;
-          animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
   -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-}
+  animation-timing-function: ease-in; }
 
 /*rotate animations*/
-@-webkit-keyframes rotateInUpLeft {
+@-webkit-keyframes rotateInDownLeft {
   0% {
     -webkit-transform-origin: left bottom;
-            transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-            transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; }
   100% {
     -webkit-transform-origin: left bottom;
-            transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: none;
-            transform: none;
-    opacity: 1;
-  }
-}
-
-@keyframes rotateInUpLeft {
+    transform: none;
+    opacity: 1; } }
+@keyframes rotateInDownLeft {
   0% {
     -webkit-transform-origin: left bottom;
-            transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-            transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; }
   100% {
     -webkit-transform-origin: left bottom;
-            transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: none;
-            transform: none;
-    opacity: 1;
-  }
-}
-
+    transform: none;
+    opacity: 1; } }
 .rotate-in.ng-hide-remove {
-  -webkit-animation-name: rotateInUpLeft;
-          animation-name: rotateInUpLeft;
-}
+  -webkit-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft; }
+
+@-webkit-keyframes rotateOutDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; } }
+@keyframes rotateOutDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; } }
+.rotate-in.ng-hide-add {
+  -webkit-animation-name: rotateOutDownLeft;
+  animation-name: rotateOutDownLeft; }
+
+/*# sourceMappingURL=my-animations.css.map */

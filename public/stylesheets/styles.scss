@@ -1,3 +1,8 @@
+@import 'fontello.css';
+@import 'fontello-codes.css';
+@import 'fontello-embedded.css';
+@import 'my-animations';
+
 nav {
   background-color: #2D2D2D !important;
 
@@ -26,16 +31,19 @@ nav {
   .view-frame {
     .home-description {
       min-height: 200px;
+      position: relative;
+
+      .rotate-in {
+        position: absolute;
+        top: 0;
+      }
     }
   }
 }
 
+//needed to make transitions work with ng-show
 .ng-hide-remove,
 .ng-hide-add {
   display: block !important;
+  @include fade-in(0.5s);
 }
-
-@import 'fontello.css';
-@import 'fontello-codes.css';
-@import 'fontello-embedded.css';
-@import 'my-animations.css';
