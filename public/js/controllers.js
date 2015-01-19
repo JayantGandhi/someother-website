@@ -10,7 +10,10 @@ appControllers.controller('SiteListController', ['$scope',
 
 appControllers.controller('HomeController', ['$scope',
   function($scope){
-    //stuff
+    $scope.section = '';
+    $scope.setSection = function(section) {
+      $scope.section = section;
+    }
   }
 ]);
 
