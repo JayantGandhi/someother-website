@@ -16,6 +16,21 @@
       "endYear"       : "2013",
       "endMonth"      : "May",
 
+    },
+    {
+      "university"    : "Johns Hopkins University",
+      "school"        : "Paul H. Nitze School of Advanced International Affairs",
+      "degree"        : "Master of Arts in International Relations & International Economics",
+      "major"         : "",
+      "concentration" : "General IR",
+      "gpa"           : "TBD",
+      "awards"        : [
+      ],
+      "startYear"     : "2014",
+      "startMonth"    : "August",
+      "endYear"       : "2016",
+      "endMonth"      : "May",
+
     }
   ]
 }
