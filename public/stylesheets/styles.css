@@ -1,6 +1,7 @@
 @import url(fontello.css);
 @import url(fontello-codes.css);
 @import url(fontello-embedded.css);
+@import url(animation.css);
 nav {
   background-color: #2D2D2D !important; }
   nav .navbar-brand img {
