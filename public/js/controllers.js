@@ -3,15 +3,13 @@ var appControllers = angular.module('appControllers', []);
 
 appControllers.controller('SiteListController', ['$scope', '$http', 'Site',
   function($scope, $http, Site){
-    // $scope.sites = sites;
     $scope.sites = Site.query();
-    console.log($scope.sites);
-    // $http.get('/api/sites').
-    //   success(function(data, status, headers, config) {
-    //     $scope.sites = data.sites;
-    // }).
-    //   error(function(data, status, headers, config) {
-    // });
+
+    //make dates for the sites
+    // for (var i = $scope.sites.length - 1; i >= 0; i--) {
+    //   $scope.sites[i].dateCreated = new Date()
+    // };
+
     $scope.orderProp = 'dateCreated';
   }
 ]);
@@ -25,8 +23,9 @@ appControllers.controller('HomeController', ['$scope', '$http',
   }
 ]);
 
-appControllers.controller('CvController', ['$scope', '$http', function($scope, $http){
-  //stuff
+appControllers.controller('CvController', ['$scope', '$http', 'Edu',
+  function($scope, $http, Edu){
+    $scope.education = Edu.query();
 }]);
 
 // appControllers.controller('CollapseController', function ($scope) {
