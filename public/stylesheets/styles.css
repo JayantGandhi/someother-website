@@ -1,7 +1,7 @@
 @import url(fontello.css);
 @import url(fontello-codes.css);
 @import url(fontello-embedded.css);
-@import url(animation.css);
+@import url(my-animations.css);
 nav {
   background-color: #2D2D2D !important; }
   nav .navbar-brand img {
@@ -17,5 +17,11 @@ nav {
 
 .view-container {
   position: relative; }
+  .view-container .view-frame .home-description {
+    min-height: 200px; }
+
+.ng-hide-remove,
+.ng-hide-add {
+  display: block !important; }
 
 /*# sourceMappingURL=styles.css.map */

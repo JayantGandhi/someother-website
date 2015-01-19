@@ -24,11 +24,18 @@ nav {
   position: relative;
 
   .view-frame {
-
+    .home-description {
+      min-height: 200px;
+    }
   }
+}
+
+.ng-hide-remove,
+.ng-hide-add {
+  display: block !important;
 }
 
 @import 'fontello.css';
 @import 'fontello-codes.css';
 @import 'fontello-embedded.css';
-@import 'animation.css';
+@import 'my-animations.css';
