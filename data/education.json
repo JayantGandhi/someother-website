@@ -5,7 +5,12 @@
       "school"        : "Edumund A. Walsh School of Foreign Affairs",
       "degree"        : "Bachelors of Science in Foreign Service",
       "major"         : "Science, Technology, & International Affairs (STIA)",
-      "concentration" : "",
+      "concentration" : "Security, Technology, & International Affairs",
+      "gpa"           : "3.690",
+      "awards"        : [
+        "cum laude",
+        "Tropaia Honors"
+      ],
       "startYear"     : "2009",
       "startMonth"    : "August",
       "endYear"       : "2013",

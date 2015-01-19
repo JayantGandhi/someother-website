@@ -47,5 +47,5 @@ nav {
 .ng-hide-remove,
 .ng-hide-add {
   display: block !important;
-  @include fade-in(2s);
+  @include fade-in(1s);
 }

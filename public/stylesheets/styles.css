@@ -205,9 +205,9 @@ nav {
 .ng-hide-remove,
 .ng-hide-add {
   display: block !important;
-  -webkit-animation: 2s fade-in;
-  -moz-animation: 2s fade-in;
-  -o-animation: 2s fade-in;
-  animation: 2s fade-in; }
+  -webkit-animation: 1s fade-in;
+  -moz-animation: 1s fade-in;
+  -o-animation: 1s fade-in;
+  animation: 1s fade-in; }
 
 /*# sourceMappingURL=styles.css.map */
