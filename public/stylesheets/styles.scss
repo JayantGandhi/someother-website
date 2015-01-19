@@ -32,9 +32,11 @@ nav {
     .home-description {
       min-height: 200px;
       position: relative;
+      z-index: -1; //I dont like it but its the easiest way to acheive the effect while keeping the html not hideous
 
-      .rotate-in {
+      .zoom-trans {
         position: absolute;
+        width: 100%;
         top: 0;
       }
     }
@@ -45,5 +47,5 @@ nav {
 .ng-hide-remove,
 .ng-hide-add {
   display: block !important;
-  @include fade-in(0.5s);
+  @include fade-in(2s);
 }

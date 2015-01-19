@@ -13,16 +13,31 @@
       $routeProvider.
         when('/', {
           templateUrl : 'partials/home.html',
-          controller  : 'HomeController'
+          controller  : 'HomeController',
+          title       : 'Website'
         }).
         when('/sites', {
           templateUrl : 'partials/site-list.html',
-          controller  : 'SiteListController'
+          controller  : 'SiteListController',
+          title       : 'Sites'
         }).
         when('/sites/:siteId', {
           templateUrl : 'partials/site.html',
-          controller  : 'SiteDetailsController'
+          controller  : 'SiteDetailsController',
+          title       : 'Site'
+        }).
+        when('/curriculum-vitae', {
+          templateUrl : 'partials/cv.html',
+          controller  : 'CvController',
+          title       : 'CV'
         });
     }
   ]);
+
+  app.run(['$location', '$rootScope', '$route', function($location, $rootScope, $route) {
+    $rootScope.$on("$routeChangeSuccess", function(currentRoute, previousRoute){
+      //Change page title, based on Route information
+      $rootScope.title = $route.current.title;
+    });
+  }]);
 })();
