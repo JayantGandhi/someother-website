@@ -1,4 +1,5 @@
 // server.js
+    require('newrelic'); //so heroku doesnt time out my server :(
 
     // set up ========================
     var express  = require('express');

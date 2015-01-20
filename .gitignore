@@ -1,3 +1,4 @@
 #.gitignore
 node_modules
 .sass-cache
+newrelic_agent.log
