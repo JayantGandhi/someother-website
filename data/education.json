@@ -3,6 +3,7 @@
     {
       "university"    : "Georgetown University",
       "school"        : "Edumund A. Walsh School of Foreign Affairs",
+      "image"         : "georgetown.jpg",
       "degree"        : "Bachelors of Science in Foreign Service",
       "major"         : "Science, Technology, & International Affairs (STIA)",
       "concentration" : "Security, Technology, & International Affairs",
@@ -20,6 +21,7 @@
     {
       "university"    : "Johns Hopkins University",
       "school"        : "Paul H. Nitze School of Advanced International Affairs",
+      "image"         : "sais.png",
       "degree"        : "Master of Arts in International Relations & International Economics",
       "major"         : "",
       "concentration" : "General IR",

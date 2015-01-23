@@ -43,6 +43,17 @@ nav {
   }
 }
 
+.resume-list {
+  list-style: none;
+
+  .resume-list-item {
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 //needed to make transitions work with ng-show
 .ng-hide-remove,
 .ng-hide-add {
