@@ -47,10 +47,14 @@ nav {
   list-style: none;
 
   .resume-list-item {
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .image {
+      height: 200px;
+      width: 200px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 }
 

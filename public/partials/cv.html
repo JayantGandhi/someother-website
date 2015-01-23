@@ -3,7 +3,8 @@
 <a href="/documents/resume-jan-2015.pdf" target="_blank">Click Here</a> for my most current resume. (Well at least the last one I updated this site with...)
 
 <ul ng-repeat="university in education" class="resume-list">
-  <li ng-cloak class="resume-list-item" style="background-image:url('/images/{{university.image}}">
+  <li ng-cloak class="resume-list-item">
+    <span class="image" style="background-image:url('/images/{{university.image}}')"></span>
 
   </li>
 </ul>
