@@ -23,9 +23,11 @@ appControllers.controller('HomeController', ['$scope', '$http',
   }
 ]);
 
-appControllers.controller('CvController', ['$scope', '$http', 'Edu',
-  function($scope, $http, Edu){
-    $scope.education = Edu.query();
+appControllers.controller('CvController', ['$scope', '$http', 'Edu', 'Exp',
+  function($scope, $http, Edu, Exp){
+    $scope.education  = Edu.query();
+    $scope.experience = Exp.query();
+
 }]);
 
 // appControllers.controller('CollapseController', function ($scope) {

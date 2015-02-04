@@ -1,16 +1,22 @@
 <h1>Welcome to my Curriculum Vit&#xe6;</h1>
 
 <a href="/documents/resume-jan-2015.pdf" target="_blank">Click Here</a> for my most current resume. (Well at least the last one I updated this site with...)
-
-<ul ng-repeat="university in education" class="resume-list flexbox">
-  <li ng-cloak class="resume-list-item row">
+<ul class="resume-list">
+  <li ng-repeat="university in education" class="flexbox resume-list-item" draggable="true">
     <span class="image" style="background-image:url('/images/{{university.image}}')"></span>
-    <div class="cell top-align left-align">
-      <div class="row">{{university.name}}</div>
-      <div class="row">{{university.school}}</div>
-      <div class="row">{{university.degree}}</div>
-      <div class="row">{{university.major}} - {{university.concentration}}</div>
-      <div class="row">{{university.gpa}}</div>
-    </div>
   </li>
 </ul>
+
+<ul class="resume-list">
+  <li ng-repeat="job in experience" class="flexbox resume-list-item" draggable="true">
+    <span class="image" style="background-image:url('/images/{{job.companyLogo}}')"></span>
+  </li>
+</ul>
+
+<div class="cell top-align left-align visibly-hidden">
+  <div class="row">{{university.name}}</div>
+  <div class="row">{{university.school}}</div>
+  <div class="row">{{university.degree}}</div>
+  <div class="row">{{university.major}} - {{university.concentration}}</div>
+  <div class="row">{{university.gpa}}</div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "list" : [
+    {
+      "companyName"   : "Thrillist Media Group",
+      "companyLogo"   : "thrillist.jpg",
+      "jobTitle"      : "FullStack Developer",
+      "description"   : "I was a FullStack Developer on Thrillist Media Group's user experienced focused development team. Mainly working in PHP, JavaScript, and SASS/CSS, we were in charge of maintaining and improving on the look and feel of Thrillist Media Groups properties (Thrillist.com, Jackthreads.com, and Supercompressor.com)",
+      "startYear"     : "2009",
+      "startMonth"    : "August",
+      "endYear"       : "2013",
+      "endMonth"      : "May"
+    }
+  ]
+}

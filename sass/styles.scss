@@ -47,6 +47,8 @@ nav {
   list-style: none;
 
   .resume-list-item {
+    display: inline-block;
+
     .image {
       height: 200px;
       width: 200px;
