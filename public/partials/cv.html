@@ -2,9 +2,15 @@
 
 <a href="/documents/resume-jan-2015.pdf" target="_blank">Click Here</a> for my most current resume. (Well at least the last one I updated this site with...)
 
-<ul ng-repeat="university in education" class="resume-list">
-  <li ng-cloak class="resume-list-item">
+<ul ng-repeat="university in education" class="resume-list flexbox">
+  <li ng-cloak class="resume-list-item row">
     <span class="image" style="background-image:url('/images/{{university.image}}')"></span>
-
+    <div class="cell top-align left-align">
+      <div class="row">{{university.name}}</div>
+      <div class="row">{{university.school}}</div>
+      <div class="row">{{university.degree}}</div>
+      <div class="row">{{university.major}} - {{university.concentration}}</div>
+      <div class="row">{{university.gpa}}</div>
+    </div>
   </li>
 </ul>

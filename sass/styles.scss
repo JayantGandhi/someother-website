@@ -58,6 +58,109 @@ nav {
   }
 }
 
+.flexbox {
+  .row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    // use flexbox if we can
+    html.flexbox & {
+      display: flex;
+    }
+
+    .cell {
+      display: table-cell;
+      flex: 1;
+      flex-direction: column;
+      position: relative;
+
+      //vertical alignment to middle
+      vertical-align: middle; // table
+      justify-content: center; // flexbox
+
+      html.flexbox & {
+        display: flex;
+      }
+
+      &.top-align {
+        vertical-align: top; //table
+        justify-content: flex-start; //flexbox
+      }
+
+      &.bottom-align {
+        vertical-align: bottom; //table
+        justify-content: flex-end; //flexbox
+      }
+
+      &.left-align {
+        text-align: left;
+      }
+
+      &.right-align {
+        text-align: right;
+      }
+
+      // make a cell double width
+      // so far only works when flexbox works
+      &.double {
+        flex-grow: 2; //dont know the table fallback...
+      }
+    }
+  }
+}
+.flexbox {
+  .row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    // use flexbox if we can
+    html.flexbox & {
+      display: flex;
+    }
+
+    .cell {
+      display: table-cell;
+      flex: 1;
+      flex-direction: column;
+      position: relative;
+
+      //vertical alignment to middle
+      vertical-align: middle; // table
+      justify-content: center; // flexbox
+
+      html.flexbox & {
+        display: flex;
+      }
+
+      &.top-align {
+        vertical-align: top; //table
+        justify-content: flex-start; //flexbox
+      }
+
+      &.bottom-align {
+        vertical-align: bottom; //table
+        justify-content: flex-end; //flexbox
+      }
+
+      &.left-align {
+        text-align: left;
+      }
+
+      &.right-align {
+        text-align: right;
+      }
+
+      // make a cell double width
+      // so far only works when flexbox works
+      &.double {
+        flex-grow: 2; //dont know the table fallback...
+      }
+    }
+  }
+}
+
 //needed to make transitions work with ng-show
 .ng-hide-remove,
 .ng-hide-add {
