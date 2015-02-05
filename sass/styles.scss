@@ -5,18 +5,24 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import 'nav';
 
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px; //so we can use rems more easily
+}
+
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
 }
 
 .view-container {
   position: relative;
   margin-left: 10%;
+  font-size: 1.6rem;
 
   .view-frame {
     .home-description {
-      min-height: 200px;
+      min-height: 20rem;
       position: relative;
       z-index: -1; //I dont like it but its the easiest way to acheive the effect while keeping the html not hideous
 
@@ -38,8 +44,8 @@ body {
     cursor: -webkit-grab;
 
     .image {
-      height: 200px;
-      width: 200px;
+      height: 20rem;
+      width: 20rem;
       display: inline-block;
       background-repeat: no-repeat;
       background-size: cover;

@@ -6,22 +6,31 @@ nav {
   left: 0;
   z-index: 99999;
   background-color: #2D2D2D;
+  font-size: 1.2rem;
 
-  .nav-links .nav-link-list>li>a.nav-link {
-    color: #D8D8D8;
+  .nav-links {
+    text-align: center;
 
-    &:hover,
-    &:focus,
-    &:active {
-      color: lighten(#D8D8D8, 20%);
+    .nav-link-list>li>a.nav-link {
+      color: #D8D8D8;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: lighten(#D8D8D8, 20%);
+      }
     }
   }
 
   ul {
     list-style: none;
+    padding: 0;
   }
 
-  .nav-link-list.right {
-    float: right;
+  .nav-link-list.icons {
+    font-size: 2rem;
+    a {
+      text-decoration: none;
+    }
   }
 }
