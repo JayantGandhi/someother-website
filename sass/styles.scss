@@ -2,31 +2,17 @@
 @import 'fontello-codes';
 @import 'fontello-embedded';
 @import 'my-animations';
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import 'nav';
 
-nav {
-  background-color: #2D2D2D !important;
-
-  .navbar-brand img {
-    margin-top: -5px;
-  }
-}
-
-.navbar-default .navbar-nav>li>a.nav-link {
-  color: #D8D8D8;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: lighten(#D8D8D8, 20%);
-  }
-}
-
-.navbar-nav.right {
-  float: right;
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .view-container {
   position: relative;
+  margin-left: 10%;
 
   .view-frame {
     .home-description {
@@ -48,6 +34,8 @@ nav {
 
   .resume-list-item {
     display: inline-block;
+    cursor: grab;
+    cursor: -webkit-grab;
 
     .image {
       height: 200px;

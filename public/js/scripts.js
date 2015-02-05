@@ -1,9 +1,10 @@
 $(document).ready(function(){
   var $siteLogo  = $('.navbar-brand');
-  var $viewFrame = $('.view-frame');
+  var $viewContainer = $('.view-container');
 
-  $viewFrame.on('change', function(e){
-    if($(e.target).hasClass('ng-animate')) {
+  $viewContainer.on('change', function(e){
+    console.log('woohooo!');
+    if($(e.target).children('.view-fram').hasClass('ng-animate')) {
       $siteLogo.addClass('spin');
     } else {
       $siteLogo.removeClass('spin');
