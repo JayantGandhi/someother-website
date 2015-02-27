@@ -226,3 +226,43 @@
   -webkit-animation-name: zoomOutUp;
           animation-name: zoomOutUp;
 }
+
+@-webkit-keyframes rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotating {
+  from{
+      -moz-transform: rotate(0deg);
+  }
+  to{
+      -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.rotates {
+  animation: rotating 500ms linear infinite;
+  -moz-animation: rotating 500ms linear infinite;
+  -webkit-animation: rotating 500ms linear infinite;
+}

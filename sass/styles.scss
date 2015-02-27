@@ -18,6 +18,7 @@ body {
 .view-container {
   position: relative;
   margin-left: 10%;
+  margin-top: 2rem;
   font-size: 1.6rem;
 
   .view-frame {
@@ -42,6 +43,8 @@ body {
     display: inline-block;
     cursor: grab;
     cursor: -webkit-grab;
+    border: 1px dotted #717171;
+    margin: .5rem;
 
     .image {
       height: 20rem;
@@ -162,4 +165,18 @@ body {
 .ng-hide-add {
   display: block !important;
   @include fade-in(1s);
+}
+
+
+.drop-box {
+  height: 20rem;
+  width: 20rem;
+  border: 1px dotted black;
+  position: absolute;
+  top: 0;
+  right: 15rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

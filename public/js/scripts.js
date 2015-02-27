@@ -10,4 +10,8 @@ $(document).ready(function(){
       $siteLogo.removeClass('spin');
     }
   });
+
+  var dragAndDrop = function () {
+
+  }
 });
