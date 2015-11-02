@@ -180,3 +180,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+noscript {
+  text-align: center;
+
+  p {
+    padding: 10rem;
+  }
+}
