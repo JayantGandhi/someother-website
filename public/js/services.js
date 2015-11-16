@@ -43,3 +43,17 @@ appServices.factory('Exp', ['$resource',
       }
     });
   }]);
+
+appServices.factory('Pubs', ['$resource',
+  function($resource){
+    return $resource('/api/publications', {}, {
+      query: {
+        method:'GET',
+        isArray:true,
+        transformResponse: function(data, header) {
+          var wrappedobj = angular.fromJson(data);
+          return wrappedobj.list;
+        }
+      }
+    });
+  }]);

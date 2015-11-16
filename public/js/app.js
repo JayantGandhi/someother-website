@@ -31,6 +31,11 @@
           templateUrl : 'partials/cv.html',
           controller  : 'CvController',
           title       : 'CV'
+        }).
+        when('/publications', {
+          templateUrl : 'partials/publications.html',
+          controller  : 'PublicationsController',
+          title       : 'Publications'
         });
     }
   ]);

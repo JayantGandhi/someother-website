@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    <li ng-repeat="publication in publications | filter:query | orderBy:orderProp">
+      <a href="{{publication.url}}" target="_blank">{{publication.title}}</a></span>
+      <iframe src="{{publication.url}}"></iframe>
+    </li>
+  </ul>
+</div>

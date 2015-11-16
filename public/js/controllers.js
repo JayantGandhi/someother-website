@@ -29,3 +29,10 @@ appControllers.controller('CvController', ['$scope', '$http', 'Edu', 'Exp',
     $scope.experience = Exp.query();
 
 }]);
+
+appControllers.controller('PublicationsController', ['$scope', '$http', 'Pubs',
+  function($scope, $http, Pubs){
+    $scope.publications = Pubs.query();
+
+    $scope.orderProp = 'pubDate';
+}]);

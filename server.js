@@ -36,6 +36,10 @@
         res.sendfile('./data/experience.json');
     });
 
+    app.get('/api/publications', function(req, res) {
+        res.sendfile('./data/publications.json');
+    });
+
     app.get('/*', function(req, res) {
         res.sendfile('./public/index.html');
     });

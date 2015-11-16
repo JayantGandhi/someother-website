@@ -1,14 +1,14 @@
-        Search: <input ng-model="query">
-        Sort by:
-        <select ng-model="orderProp">
-          <option value="name">Alphabetical</option>
-          <option value="year">Newest</option>
-        </select>
+Search: <input ng-model="query">
+Sort by:
+<select ng-model="orderProp">
+  <option value="name">Alphabetical</option>
+  <option value="year">Newest</option>
+</select>
 
-        <div>
-          <ul>
-            <li ng-repeat="site in sites | filter:query | orderBy:orderProp">
-              <a href="{{site.url}}" target="_blank">{{site.name}}</a><span> - {{site.year}}</span>
-            </li>
-          </ul>
-        </div>
+<div>
+  <ul>
+    <li ng-repeat="site in sites | filter:query | orderBy:orderProp">
+      <a href="{{site.url}}" target="_blank">{{site.name}}</a><span> - {{site.year}}</span>
+    </li>
+  </ul>
+</div>
