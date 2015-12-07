@@ -42,7 +42,11 @@ module.exports = function(grunt) {
     },
     watch: {
       files: ['<%= jshint.files %>'],
-      tasks: ['jshint', 'compass']
+      tasks: ['jshint'],
+      css: {
+        files: 'sass/*.scss',
+        tasks: ['compass']
+      }
     }
   });
 

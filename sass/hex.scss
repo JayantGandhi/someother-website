@@ -1,7 +1,7 @@
 // from http://codepen.io/clioweb/pen/RPazBg
 
 $hex-size: 6em; // Only change size here. Best used with sizes from 5em - 10em.
-
+$hex-color: #ccc;
 
 
 
@@ -23,11 +23,24 @@ ol.odd {
   position: relative;
   margin: 1em auto;
   width: $hex-size; height: ($hex-size * 1.7);
-  background: #ccc;
+  background: $hex-color;
   transform: rotate(-90deg);
   display: inline-block;
   margin-right: ($hex-size / 1.30);
   transition: all 150ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($hex-color, 10%);
+  }
+
+  &.empty {
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+  }
 
   h3 {
     position: absolute;
@@ -37,6 +50,12 @@ ol.odd {
     top: 25%;
     right: -25%;
     text-align: center;
+  }
+
+  a {
+    color: #000;
+    width: 100%;
+    height: 100%;
   }
 }
 .hex:before, .hex:after {
@@ -51,8 +70,4 @@ ol.odd {
 }
 .hex:after {
   transform: rotate(-60deg);
-}
-.hex:hover {
-  background: #F58787;
-  cursor: pointer;
 }

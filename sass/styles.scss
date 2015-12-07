@@ -25,7 +25,10 @@ body {
   .view-frame {
     .home-description {
       min-height: 20rem;
-      position: relative;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      top: 5rem;
       z-index: -1; //I dont like it but its the easiest way to acheive the effect while keeping the html not hideous
 
       .zoom-trans {
