@@ -3,8 +3,9 @@
 @import 'fontello-embedded';
 @import 'my-animations';
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+@import 'buttons';
 @import 'hex';
-@import 'nav';
+@import 'home';
 
 html {
   font-family: 'Roboto', sans-serif;
@@ -16,10 +17,13 @@ body {
   font-size: 1.6rem;
 }
 
+.home-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .view-container {
-  position: relative;
-  margin-left: 10%;
-  margin-top: 2rem;
   font-size: 1.6rem;
 
   .view-frame {
@@ -191,4 +195,28 @@ noscript {
   p {
     padding: 10rem;
   }
+}
+
+.loading {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  top: 50%;
+  z-index: -10;
+}
+
+.loading-text:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+.askew {
+  transform: rotate(10deg);
+  display: inline-block;
 }
