@@ -36,7 +36,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
   </head>
-  <body>
+  <body ng-class="{{siteType}}">
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience. Seriously.</p>
     <![endif]-->
@@ -49,7 +49,7 @@
     </div> -->
 
     <div class="view-container">
-        <div ng-view class="container-fluid view-frame"></div>
+        <div ng-view class="container-fluid view-frame {{viewType}}"></div>
     </div>
 
     <!-- Since it's an angular site we can't really show it without js... -->
@@ -60,7 +60,10 @@
     </noscript>
 
     <!-- my angular scripts -->
-    <script type="text/javascript" src="js/SomeOtherWebsite.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/directives.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

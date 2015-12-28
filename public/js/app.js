@@ -17,6 +17,16 @@
           controller  : 'HomeController',
           title       : 'Website'
         }).
+        when('/home', {
+          templateUrl : 'partials/professional.html',
+          controller  : 'HomeController',
+          title       : 'Website'
+        }).
+        when('/hoam', {
+          templateUrl : 'partials/unprofessional.html',
+          controller  : 'HomeController',
+          title       : 'Websight'
+        }).
         when('/sites', {
           templateUrl : 'partials/site-list.html',
           controller  : 'SiteListController',

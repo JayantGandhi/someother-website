@@ -14,8 +14,8 @@ appControllers.controller('SiteListController', ['$scope', '$http', 'Site',
   }
 ]);
 
-appControllers.controller('HomeController', ['$scope', '$http',
-  function($scope, $http){
+appControllers.controller('HomeController', ['$scope', '$rootScope', '$http',
+  function($scope, $rootScope, $http){
     $scope.section = '';
     $scope.setSection = function(section) {
       $scope.section = section;
