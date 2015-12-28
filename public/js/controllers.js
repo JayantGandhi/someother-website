@@ -14,11 +14,21 @@ appControllers.controller('SiteListController', ['$scope', '$http', 'Site',
   }
 ]);
 
-appControllers.controller('HomeController', ['$scope', '$rootScope', '$http',
-  function($scope, $rootScope, $http){
+appControllers.controller('HomeController', ['$scope', '$rootScope', '$location', '$http',
+  function($scope, $rootScope, $location, $http){
     $scope.section = '';
     $scope.setSection = function(section) {
       $scope.section = section;
+    }
+
+    $scope.professional = function(view) {
+      $rootScope.siteType = 'professional';
+      $location.path(view);
+    }
+
+    $scope.unprofessional = function(view) {
+      $rootScope.siteType = 'unprofessional';
+      $location.path(view);
     }
   }
 ]);
