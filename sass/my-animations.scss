@@ -13,13 +13,20 @@
   animation: $time fade-in;
 }
 
+@mixin fade-out($time) {
+  -webkit-animation: $time fade-out;
+  -moz-animation: $time fade-out;
+  -o-animation: $time fade-out;
+  animation: $time fade-out;
+}
+
 .view-frame.ng-enter {
   @include fade-in(1s);
   z-index: 100;
 }
 
 .view-frame.ng-leave {
-  @include fade-in(1s);
+  @include fade-out(500ms);
   z-index:99;
 }
 

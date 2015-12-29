@@ -1,7 +1,7 @@
 <div class="home-loading">
-  <h1>Welcome to <a class="low-profile-link" href="https://www.linkedin.com/in/jaygandhi1" target="_blank">Jay's</a> Personal Website</h1>
+  <h1>Welcome to <a ng-mouseenter="spin_logo=true" ng-mouseleave="spin_logo=false" class="low-profile-link" href="https://www.linkedin.com/in/jaygandhi1" target="_blank">Jay's</a> Personal Website</h1>
   <div class="logo">
-    <img ng-class="{'rotates':hovering}" ng-mouseenter="hovering=true" ng-mouseleave="hovering=false" src="images/someOtherLogo.png" width="50" height="50">
+    <img ng-class="{'rotates':spin_logo}" ng-mouseenter="spin_logo=true" ng-mouseleave="spin_logo=false" src="images/someOtherLogo.png" width="50" height="50">
   </div>
   <div class="load-percent"><span></span></div>
   <h2>Please Choose an Experience</h2>

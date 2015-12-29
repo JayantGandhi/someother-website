@@ -21,6 +21,19 @@ module.exports = function(grunt) {
         }
       }
     },
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+            require('autoprefixer')({
+                browsers: ['last 2 versions']
+            })
+        ]
+      },
+      dist: {
+        src: 'public/stylesheets/*.css'
+      }
+    },
     jshint: {
       files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
       options: {
@@ -45,7 +58,7 @@ module.exports = function(grunt) {
       tasks: ['jshint'],
       css: {
         files: 'sass/*.scss',
-        tasks: ['compass']
+        tasks: ['compass', 'postcss:dist']
       }
     }
   });
@@ -55,7 +68,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-postcss');
 
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'compass']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'compass', 'postcss:dist']);
 
 };
