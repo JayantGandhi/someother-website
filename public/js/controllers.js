@@ -30,6 +30,10 @@ appControllers.controller('HomeController', ['$scope', '$rootScope', '$location'
       $rootScope.siteType = 'unprofessional';
       $location.path(view);
     }
+
+    $scope.menuPrompt = function(promptText) {
+      $scope.promptText = promptText;
+    }
   }
 ]);
 

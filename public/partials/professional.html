@@ -1,10 +1,10 @@
 <div class="circle-menu">
-  <h1 class="cirlce-menu-title">Jay Gandhi</h1>
+  <h1 class="circle-menu-title">{{promptText}}</h1>
   <ul class="circle-menu-items">
-    <li><a class="two-lines" href="/curriculum-vitae">Curriculum Vitae</a></li>
-    <li><a href="/sites">Sites</a></li>
-    <li><a href="/publications">Publications</a></li>
-    <li><a target="_blank" href="https://www.github.com/jayantgandhi"><span class="icon-github"></span></a></li>
-    <li><a target="_blank" href="https://www.linkedin.com/in/jaygandhi1"><span class="icon-linkedin"></span></a></li>
+    <li ng-mouseenter="menuPrompt('Curriculm Vitae')" ng-mouseleave="menuPrompt('Jay Gandhi')"><a href="/curriculum-vitae">CV</a></li>
+    <li ng-mouseenter="menuPrompt('Websites')" ng-mouseleave="menuPrompt('Jay Gandhi')"><a href="/sites">Sites</a></li>
+    <li ng-mouseenter="menuPrompt('Publications')" ng-mouseleave="menuPrompt('Jay Gandhi')"><a href="/publications">Publications</a></li>
+    <li ng-mouseenter="menuPrompt('GitHub')" ng-mouseleave="menuPrompt('Jay Gandhi')"><a target="_blank" href="https://www.github.com/jayantgandhi"><span class="icon-github"></span></a></li>
+    <li ng-mouseenter="menuPrompt('LinkedIn')" ng-mouseleave="menuPrompt('Jay Gandhi')"><a target="_blank" href="https://www.linkedin.com/in/jaygandhi1"><span class="icon-linkedin"></span></a></li>
   </ul>
 </div>

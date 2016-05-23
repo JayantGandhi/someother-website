@@ -40,7 +40,7 @@ $link-size: 7em;
 
 .circle-menu {
   .circle-menu-items {
-    @include on-circle($item-count: 5, $circle-size: 20em, $item-size: $link-size);
+    @include on-circle($item-count: 5, $circle-size: 50rem, $item-size: $link-size);
     margin: 5em auto 0;
     border: 5px dotted #999494;
 
@@ -56,11 +56,6 @@ $link-size: 7em;
         position: absolute;
         text-align: center;
         line-height: $link-size;
-
-        &.two-lines {
-          line-height: 1em;
-          top: $link-size / 3;
-        }
       }
 
       &:hover, &:focus {
@@ -72,4 +67,15 @@ $link-size: 7em;
       }
     }
   }
+}
+
+.circle-menu-title {
+  display: inline;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 40rem;
+  text-align: center;
+  top: 30rem;
 }
