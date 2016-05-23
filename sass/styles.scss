@@ -6,6 +6,7 @@
 @import 'buttons';
 @import 'circle-menu';
 @import 'home';
+@import 'tabs';
 
 html {
   font-family: 'Roboto', sans-serif;
@@ -237,4 +238,8 @@ noscript {
       1px -1px 0 #FF830B,
       1px 1px 0 #FF830B;
   }
+}
+
+.headshot {
+  border-radius: 100%;
 }

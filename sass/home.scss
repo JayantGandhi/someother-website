@@ -15,12 +15,13 @@
 
   .the-choice {
     list-style: none;
-    display: inline-block;
+    display: block;
     width: 100%;
     text-align: center;
 
     li {
-      display: inline-block;
+      display: block;
+      margin-bottom: 5rem;
 
       &:first-child {
         margin-left: -10rem;
